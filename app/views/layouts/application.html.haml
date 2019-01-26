@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title EchoArt
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %title Execute a business category bootstrap responsive website template
+    / /tags
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "text/html; charset=US-ASCII", "http-equiv" => "Content-Type"}/
+    %meta{:content => "Execute Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \r\nSmartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design", :name => "keywords"}/
+    %link{:href => "//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900", :rel => "stylesheet"}/
+    %link{:href => "//fonts.googleapis.com/css?family=Quicksand:300,400,500,700", :rel => "stylesheet"}/
+    %html{:lang => "ru"}
+  %body
+    = yield
+
+
