@@ -6,7 +6,6 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    %title Execute a business category bootstrap responsive website template
     / /tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:content => "text/html; charset=US-ASCII", "http-equiv" => "Content-Type"}/
@@ -15,6 +14,9 @@
     %link{:href => "//fonts.googleapis.com/css?family=Quicksand:300,400,500,700", :rel => "stylesheet"}/
     %html{:lang => "ru"}
   %body
+    = render partial: 'shared/header'
     = yield
 
-
+.footer.text-center
+  \© 2019 Исполнители. Опенсорс | Разработка сайта
+  %a{:href => "https://github.com/tjai89", target: "_blank"} Журавлев Кирилл

@@ -1,0 +1,84 @@
+/ about
+#we-offer.we-offer
+  .we-offer-info.text-center
+    %h3 Что мы можем вам предложить
+    %label
+    %p Особые проекты обговариваются отдельно
+  .we-offer-content
+    .container
+      .row
+        .col-sm-4.col-md-4.we-offer-cont
+          .we-offer-content1
+            .row.cont
+              .col-sm-3.col-md-2.cont-icon1
+                %i.fa.fa-anchor{"aria-hidden" => "true"}
+              .col-sm-9.col-md-10
+                %h3 Граффити
+                %p на внутренних и внешних стенах
+              .clearfix
+          .we-offer-par
+            %p Используются высококлассные, быстро выветривающиеся краски
+        .col-sm-4.col-md-4.we-offer-cont
+          .we-offer-content1
+            .row.cont
+              .col-sm-3.col-md-2.cont-icon1
+                %i.fa.fa-users{"aria-hidden" => "true"}
+              .col-sm-9.col-md-10
+                %h3 Художественная роспись
+                %p Различные приемы и техники
+              .clearfix
+          .we-offer-par
+            %p Художественная роспись позволяет получить высокую детализацию и обработку мелких деталей
+        .col-sm-4.col-md-4.we-offer-cont
+          .we-offer-content1
+            .row.cont
+              .col-sm-3.col-md-2.cont-icon1
+                %i.fa.fa-wpforms{"aria-hidden" => "true"}
+              .col-sm-9.col-md-10
+                %h3 Аэрография
+                %p Роспись аэрографом
+              .clearfix
+            .we-offer-par
+              %p Позволяет добиться высокой детализации
+        .clearfix
+  .we-offer-about
+    .container
+      .row.about
+        .col-sm-6.col-md-6.choose
+          %h2 Почему вам стоит выбрать именно нас?
+          %label
+          %p Полное сопровождение проекта от макета до исполнения
+          #accordion.panel-group.w3l_panel_group_faq{"aria-multiselectable" => "true", :role => "tablist"}
+            .panel.panel-default
+              #headingOne.panel-heading{:role => "tab"}
+                %h4.panel-title.asd
+                  %a.pa_italic{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne", :role => "button"}
+                    %span.glyphicon.glyphicon-plus{"aria-hidden" => "true"}
+                    = succeed "Разработка макета в photoshop" do
+                      %i.glyphicon.glyphicon-minus{"aria-hidden" => "true"}
+              #collapseOne.panel-collapse.collapse.in{"aria-labelledby" => "headingOne", :role => "tabpanel"}
+                .panel-body.panel_text
+                  Вы можете уже на начальном этапе увидеть, как будет выглядеть рисунок в интерьере
+            .panel.panel-default
+              #headingTwo.panel-heading{:role => "tab"}
+                %h4.panel-title.asd
+                  %a.pa_italic.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo", :role => "button"}
+                    %span.glyphicon.glyphicon-plus{"aria-hidden" => "true"}
+                    = succeed "Элементы интерьера учитываются" do
+                      %i.glyphicon.glyphicon-minus{"aria-hidden" => "true"}
+              #collapseTwo.panel-collapse.collapse{"aria-labelledby" => "headingTwo", :role => "tabpanel"}
+                .panel-body.panel_text
+                  Мы можем обыграть батареи, подоконник, каминный портал, да все что угодно так, чтобы это гармонировало с рисунком.
+            .panel.panel-default
+              #headingThree.panel-heading{:role => "tab"}
+                %h4.panel-title.asd
+                  %a.pa_italic.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree", :role => "button"}
+                    %span.glyphicon.glyphicon-plus{"aria-hidden" => "true"}
+                    = succeed "Выбор остается за вами!" do
+                      %i.glyphicon.glyphicon-minus{"aria-hidden" => "true"}
+              #collapseThree.panel-collapse.collapse{"aria-labelledby" => "headingThree", :role => "tabpanel"}
+                .panel-body.panel_text
+                  Так или иначе, именно вы решаете, как будет выглядеть окончательный рисунок.
+        .col-sm-6.col-md-6
+          %img{:alt => " ", :src => "images/we-offer-img.jpg"}/
+        .clearfix

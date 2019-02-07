@@ -1,0 +1,29 @@
+%p#notice= notice
+
+#gallery.gallery
+  .gallery-info.text-center
+    %h3= @gallery.image_title
+    %p= @gallery.image_description
+    =link_to 'Очистить галерею', gallery_image_path(@gallery, clear_gallery: true), method: :delete, data: { confirm: 'Are you sure?' }
+  .gallery-content
+    .container
+      #gal.portfolio-gallery
+        / %h1 Загрузить новое фото
+        / %br/
+        / = simple_form_for [@gallery, @gallery.images.build] do |f|
+        /   .form-group
+        /     = f.input :name, placeholder: 'Название фото', label: false
+        /   .form-group
+        /     = f.input :image, as: :file, :multiple => true, name: "hui", label: false
+        /   .form-group
+        /     = f.button :submit, 'Сохранить'
+        - @gallery.images.each do |image|
+          - if image.id
+            .gallery_product.col-lg-4.col-md-4.col-sm-6.col-xs-12
+              =link_to 'Удалить картинку', gallery_image_path(@gallery, image_id: image.id), method: :delete, data: { confirm: 'Are you sure?' }
+              .hovereffect
+                %a.chocolat-image{:href => "#{image.image.url(:large)}"}
+                  %img.img-responsive{:alt => " ", :src => "#{image.image.url(:large)}"}/
+                  .overlay
+                    %h4= image.name
+                    =link_to 'Удалить картинку', data: { confirm: 'Are you sure?' }

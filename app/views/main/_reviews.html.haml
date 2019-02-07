@@ -1,0 +1,63 @@
+#testimonials.testimonials
+  .testimonials-info.text-center
+    %h3 Отзывы
+    %label
+  .testimonials-content
+    .container
+      #myCarousel.carousel.slide{"data-interval" => "3000", "data-pause" => "false", "data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        / Wrapper for slides
+        .carousel-inner{:role => "listbox"}
+          .item.active
+            .row
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => " ", :src => "images/team-img3.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Кирилл Журавлев
+                    %p Уникальная работа, профессиональный подход к делу, я доволен!
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => "", :src => "images/team-img3.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Кирилл Журавлев
+                    %p Хочу еще!!!!
+          .item
+            .row
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => " ", :src => "images/team-img1.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Тоня
+                    %p Красавчик!
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => "", :src => "images/team-img2.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Юра
+                    %p Зналибы вы, как меня это все зае*ло!)
+          .item
+            .row
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => " ", :src => "images/team-img2.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Юра
+                    %p Еще и 2 раза придется писать комментарий
+              .col-xs-6.col-sm-6.col-md-6
+                .row
+                  .col-sm-12.col-md-6
+                    %img{:alt => "", :src => "images/testimonials-img2.jpg"}/
+                  .col-sm-12.col-md-6
+                    %h3 Романа
+                    %p Я ваще хз, кто вы такие, но нужно оставить комментарий)
+        / Left and right controls

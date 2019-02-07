@@ -1,0 +1,34 @@
+.top.nav
+  %nav.navbar.navbar-default
+    .container
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %h1.navbar-brand
+          %a{:href => "#"}
+            %span> E
+            cho-Art
+      / Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %nav#link-effect-2.link-effect-2
+          %ul.nav.navbar-nav.navbar-right
+            %li.active
+              =link_to 'Домой', root_path, { class: 'effect-3' }
+            %li
+              %a.effect-3.page-scroll{:href => "#we-offer"} О нас
+            %li
+              %a.effect-3.page-scroll{:href => "#services"} Наши услуги
+            %li
+              %a.effect-3.page-scroll{:href => "#our-team"} Наша команда
+            %li
+              =link_to "Проекты", galleries_path, { class: 'effect-3 page-scroll' } 
+            %li
+              %a.effect-3.page-scroll{:href => "#testimonials"} Отзывы
+            %li
+              %a.effect-3.page-scroll{:href => "#contact"} Связаться с нами
+      / /.navbar-collapse
+    / /.container-fluid

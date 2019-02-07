@@ -1,0 +1,29 @@
+#contact.contact
+  .contact-info.text-center
+    %h3 Связаться с нами
+    %label
+  .contact-content
+    .container
+      .row
+        .col-sm-12.col-md-3
+          .contact-tel
+            %ul
+              %li.tel1
+                %i.fa.fa-mobile{"aria-hidden" => "true"}
+                %span +(978) 777 77 77
+              %li.tel2
+                %i.fa.fa-envelope-o.contact-mail{"aria-hidden" => "true"}
+                %a{:href => "mailto:info@outlook.com"} мой_имейл@example1.com
+        .col-sm-12.col-md-9
+          .contact-form
+            %form#contact-us{:action => "#", :method => "post"}
+              .row.form1
+                .col-sm-12.col-md-6
+                  %input.name{:name => "name", :placeholder => "имя", :type => "text"}/
+                .col-sm-12.col-md-6
+                  %input.email{:name => "email", :placeholder => "имейл", :type => "email"}/
+              .row.form2
+                .col-sm-12.col-md-8
+                  %textarea.textarea{:placeholder => "сообщение"}
+                .col-sm-12.col-md-4.text-center
+                  %input.submit{:type => "submit", :value => "Submit"}/

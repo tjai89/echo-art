@@ -1,0 +1,9 @@
+%h2 Создать новую галерею
+%br/
+= simple_form_for @gallery do |f|
+  = f.input :image_title, placeholder: 'Название галереи', label: false
+  = f.input :image_description, placeholder: 'Описание гелереи', label: false
+  %br/
+  = f.button :submit
+
+

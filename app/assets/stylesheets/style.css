@@ -1,3 +1,13 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+
+/*-- Reset-Code --*/
+
 body {
     padding: 0;
     margin: 0;
@@ -1031,7 +1041,7 @@ textarea.textarea {
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: ("/public/images/arrow.PNG") no-repeat 0px 0px;
+    background: url("../images/arrow.PNG") no-repeat 0px 0px;
 }
 
 #toTopHover {

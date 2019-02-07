@@ -1,0 +1,21 @@
+#gallery.gallery
+  .gallery-info.text-center
+    %h3= t('Наши проекты')
+    = link_to 'Создать новую галерею', new_gallery_path
+
+- @galleries.each do |gallery|
+  #gallery.gallery
+    .gallery-info.text-center
+      %h3= link_to gallery.image_title, gallery
+      = link_to 'Редактировать', edit_gallery_path(gallery)
+      = link_to 'Удалить', gallery, method: :delete, data: { confirm: 'Are you sure?' }
+    .gallery-content
+      .container
+        #gal.portfolio-gallery
+          - gallery.images[0..2].each do |image|
+            .gallery_product.col-lg-4.col-md-4.col-sm-6.col-xs-12
+              .hovereffect
+                %a.chocolat-image{:href => "#{image.image&.url(:large)}"}
+                  %img.img-responsive{:alt => " ", :src => "#{image.image&.url(:medium)}"}/
+                  .overlay
+                    %h4= image.name
